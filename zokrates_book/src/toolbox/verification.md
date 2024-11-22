@@ -9,7 +9,7 @@ const address = '0x456...'; // verifier contract address
 
 let verifier = new web3.eth.Contract(abi, address, {
     from: accounts[0], // default from address
-    gasPrice: '20000000000000'; // default gas price in wei
+    gasPrice: '20000000000000', // default gas price in wei
 });
 
 let result = await verifier.methods
